@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4o、Claude3.5、o1，无需翻墙）</title>
+    <title>ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4，无需翻墙）</title>
     <meta name="description" content="ChatGPT 中文版是由 OpenAI 开发的 ChatGPT 模型的中文优化版本，专为中文用户提供流畅且精准的对话体验。全面整理 ChatGPT 中文版 的国内使用方式，为用户提供无需翻墙的镜像网站推荐。本指南致力于为用户提供全面的 ChatGPT 中文版使用指南，整合了国内可用的 ChatGPT镜像网站 和 官网使用教程，帮助您快速掌握 ChatGPT，无论是个人使用还是专业应用，均可无限使用 ChatGPT-4、GPT-4o 和 o1-preview！">
     <meta name="keywords" content="ChatGPT中文版,GPT国内使用,ChatGPT中文网,ChatGPT入口,ChatGPT国内入口,ChatGPT中文站,ChatGPT中文网站,chatgpt中文镜像,ChatGPT国内版,ChatGPT中国站,ChatGPT国内使用,人工智能,ChatGPT中文网官网,ChatGPT镜像">
-    <meta property="og:title" content="ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4，无需翻墙）【<span id="metaDate"></span>】">
+    <meta property="og:title" content="ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4，无需翻墙）">
     <meta property="og:description" content="ChatGPT 中文版是由 OpenAI 开发的 ChatGPT 模型的中文优化版本，专为中文用户提供流畅且精准的对话体验。全面整理 ChatGPT 中文版 的国内使用方式，为用户提供无需翻墙的镜像网站推荐。本指南致力于为用户提供全面的 ChatGPT 中文版使用指南，整合了国内可用的 ChatGPT镜像网站 和 官网使用教程，帮助您快速掌握 ChatGPT，无论是个人使用还是专业应用，均可无限使用 ChatGPT-4、GPT-4o 和 o1-preview！">
     <meta property="og:url" content="https://loursa.github.io/ChatGPT-4-Guide/">
-    <meta property="twitter:title" content="ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4，无需翻墙）【<span id="twitterDate"></span>】">
+    <meta property="twitter:title" content="ChatGPT 中文版：免费使用指南与镜像网站推荐（支持 GPT-4，无需翻墙）【2024/12/06更新】">
+    <meta property="twitter:description" content="ChatGPT 中文版是由 OpenAI 开发的 ChatGPT 模型的中文优化版本，专为中文用户提供流畅且精准的对话体验。全面整理 ChatGPT 中文版 的国内使用方式，为用户提供无需翻墙的镜像网站推荐。本指南致力于为用户提供全面的 ChatGPT 中文版使用指南，整合了国内可用的 ChatGPT镜像网站 和 官网使用教程，帮助您快速掌握 ChatGPT，无论是个人使用还是专业应用，均可无限使用 ChatGPT-4、GPT-4o 和 o1-preview！">
     <meta name="twitter:card" content="summary_large_image">
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
@@ -227,7 +228,7 @@
             <h3>Q3：询问它是不是GPT-4，为什么回答不是？</h3>
             <p>大模型的本质是神经网络的概率模型，它本身没有自我认知，并不知道自己是什么模型，它对用户这个问题的回答完全取决于模型的System设置，对于官网会加一段System设置类似『你是GPT4o模型，你的数据库截止时间是2024年4月』，对于镜像平台如果加了设置，回答就是设置内容，如果没有加设置回答就是模型自由发挥。所以通过询问模型版本并不能得到模型真实版本情况。</p>
             <h3>Q4：那我该如何鉴别是不是GPT4或者其他模型冒充的呢？</h3>
-            <p>鉴别模型最好的办法还是用复杂逻辑问题去区分模型，这里给两个的例子『三人三天三桶水，九人九天几桶水』，『我在7楼等电梯，目前电梯在四楼且向下运行，每一层2秒钟，问我多久能下到一楼』</p>
+            <p>鉴别模型最好的办法还是用复杂逻辑问题去区分模型，这里给两个的例子『三人三天三桶水，九人九天几桶水』��『我在7楼等电梯，目前电梯在四楼且向下运行，每一层2秒钟，问我多久能下到一楼』</p>
         </section>
 
         <!-- 数据隐私 -->
@@ -249,29 +250,8 @@
             return `${year}/${month}/${day}`;
         }
         
-        function updateDates() {
-            const currentDate = formatDate(new Date());
-            
-            // 更新页面显示的日期
-            document.getElementById('currentDate').innerHTML = currentDate;
-            
-            // 更新所有包含日期的 meta 标签
-            const metaTags = document.getElementsByTagName('meta');
-            for (let tag of metaTags) {
-                const content = tag.getAttribute('content');
-                if (content && content.includes('【')) {
-                    tag.setAttribute('content', content.replace(/【.*?】/, `【${currentDate}】`));
-                }
-            }
-            
-            // 更新标题
-            document.title = document.title.replace(/【.*?】/, `【${currentDate}】`);
-        }
-
-        // 页面加载完成后执行
-        document.addEventListener('DOMContentLoaded', updateDates);
+        document.getElementById('currentDate').textContent = formatDate(new Date());
     </script>
-
 </body>
 </html>
 <style>
